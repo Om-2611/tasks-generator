@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tasks Generator – Mini Planning Tool
 
-## Getting Started
+A web application that generates structured feature planning documents including user stories and engineering tasks using an LLM.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Input feature idea (goal, users, constraints, type)
+- Generate structured user stories and engineering tasks
+- Edit generated plan
+- Reorder and modify tasks manually
+- Save updates to database
+- View last 5 generated specs
+- Export plan (copy or download markdown)
+- System status page (Backend, DB, LLM health)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 14 (App Router)
+- Supabase (Database)
+- OpenRouter (LLM API)
+- TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Setup Instructions
 
-## Learn More
+1. Clone repo
+2. Install dependencies
+3. Create `.env.local` from `.env.example`
+4. Add:
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+OPENROUTER_API_KEY=
+5. Run locally
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 What is Done
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Core generation flow
+- Editable output
+- Save functionality
+- History tracking (last 5)
+- Export support
+- Status monitoring
 
-## Deploy on Vercel
+## ⚠️ What is Not Done
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Drag-and-drop reordering (manual edit supported)
+- Authentication
+- Advanced role-based editing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
+
